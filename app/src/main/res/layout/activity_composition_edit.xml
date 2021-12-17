@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:layout_margin="10dp"
+   tools:context="com.project.OWcompTracker.CompositionEditActivity">
+
+   <TextView
+      android:id="@+id/composition_label_text_view"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/composition_name_label"
+      android:labelFor="@id/composition_edit_text"
+      style="@style/CompLabel"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent" />
+
+   <EditText
+      android:id="@+id/composition_edit_text"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:hint="@string/composition_name_hint"
+      android:importantForAutofill="no"
+      android:inputType="text"
+      style="@style/CompEditText"
+      app:layout_constraintBottom_toBottomOf="@id/composition_label_text_view"
+      app:layout_constraintLeft_toRightOf="@id/composition_label_text_view"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="@id/composition_label_text_view" />
+
+   <TextView
+       android:id="@+id/victory_label_text_view"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/victory_label"
+       android:labelFor="@id/answer_edit_text"
+       style="@style/CompLabel"
+       app:layout_constraintTop_toBottomOf="@id/composition_label_text_view"
+       app:layout_constraintLeft_toLeftOf="parent" />
+
+
+   <EditText
+       android:id="@+id/victory_edit_text"
+       android:layout_width="0dp"
+       android:layout_height="0dp"
+       android:hint="@string/victory_hint"
+       android:importantForAutofill="no"
+       android:inputType="text"
+       style="@style/CompEditText"
+       app:layout_constraintTop_toTopOf="@id/victory_label_text_view"
+       app:layout_constraintBottom_toBottomOf="@id/victory_label_text_view"
+       app:layout_constraintLeft_toRightOf="@id/victory_label_text_view"
+       app:layout_constraintRight_toRightOf="parent" />
+
+   <TextView
+       android:id="@+id/rating_label_text_view"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/rating_label"
+       android:labelFor="@id/answer_edit_text"
+       style="@style/CompLabel"
+       app:layout_constraintTop_toBottomOf="@id/victory_label_text_view"
+       app:layout_constraintLeft_toLeftOf="parent" />
+
+   <EditText
+       android:id="@+id/rating_edit_text"
+       android:layout_width="0dp"
+       android:layout_height="0dp"
+       android:hint="@string/rating_hint"
+       android:importantForAutofill="no"
+       android:inputType="text"
+       style="@style/CompEditText"
+       app:layout_constraintTop_toTopOf="@id/rating_label_text_view"
+       app:layout_constraintBottom_toBottomOf="@id/rating_label_text_view"
+       app:layout_constraintLeft_toRightOf="@id/rating_label_text_view"
+       app:layout_constraintRight_toRightOf="parent" />
+
+   <TextView
+      android:id="@+id/answer_label_text_view"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/t0_label"
+      android:labelFor="@id/answer_edit_text"
+      style="@style/CompLabel"
+      app:layout_constraintTop_toBottomOf="@id/rating_label_text_view"
+      app:layout_constraintLeft_toLeftOf="parent" />
+
+   <EditText
+      android:id="@+id/answer_edit_text"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:hint="@string/t0_hint"
+      android:importantForAutofill="no"
+      android:inputType="text"
+      style="@style/CompEditText"
+       app:layout_constraintTop_toTopOf="@id/answer_label_text_view"
+       app:layout_constraintBottom_toBottomOf="@id/answer_label_text_view"
+       app:layout_constraintLeft_toRightOf="@id/answer_label_text_view"
+       app:layout_constraintRight_toRightOf="parent" />
+
+
+   <TextView
+       android:id="@+id/tank1_label_text_view"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/t1_label"
+       style="@style/CompLabel"
+       app:layout_constraintTop_toBottomOf="@+id/answer_label_text_view"
+       app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+   <EditText
+       android:id="@+id/tank1_edit_text"
+       android:layout_width="0dp"
+       android:layout_height="0dp"
+       android:hint="@string/t1_hint"
+       android:importantForAutofill="no"
+       android:inputType="text"
+       style="@style/CompEditText"
+       app:layout_constraintTop_toTopOf="@id/tank1_label_text_view"
+       app:layout_constraintLeft_toRightOf="@id/tank1_label_text_view"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintBottom_toBottomOf="@id/tank1_label_text_view"/>
+
+
+   <TextView
+       android:id="@+id/dps0_label_text_view"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/d0_label"
+       style="@style/CompLabel"
+       app:layout_constraintTop_toBottomOf="@+id/tank1_label_text_view"
+       app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+   <EditText
+       android:id="@+id/dps0_edit_text"
+       android:layout_width="0dp"
+       android:layout_height="0dp"
+       android:hint="@string/d0_hint"
+       android:importantForAutofill="no"
+       android:inputType="text"
+       style="@style/CompEditText"
+       app:layout_constraintTop_toTopOf="@id/dps0_label_text_view"
+       app:layout_constraintLeft_toRightOf="@id/dps0_label_text_view"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintBottom_toBottomOf="@id/dps0_label_text_view"/>
+
+   <TextView
+       android:id="@+id/dps1_label_text_view"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/d1_label"
+       style="@style/CompLabel"
+       app:layout_constraintTop_toBottomOf="@+id/dps0_label_text_view"
+       app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+   <EditText
+       android:id="@+id/dps1_edit_text"
+       android:layout_width="0dp"
+       android:layout_height="0dp"
+       android:hint="@string/d1_hint"
+       android:importantForAutofill="no"
+       android:inputType="text"
+       style="@style/CompEditText"
+       app:layout_constraintTop_toTopOf="@id/dps1_label_text_view"
+       app:layout_constraintLeft_toRightOf="@id/dps1_label_text_view"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintBottom_toBottomOf="@id/dps1_label_text_view"/>
+
+
+   <TextView
+       android:id="@+id/support0_label_text_view"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/s0_label"
+       style="@style/CompLabel"
+       app:layout_constraintTop_toBottomOf="@+id/dps1_label_text_view"
+       app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+   <EditText
+       android:id="@+id/support0_edit_text"
+       android:layout_width="0dp"
+       android:layout_height="0dp"
+       android:hint="@string/s0_hint"
+       android:importantForAutofill="no"
+       android:inputType="text"
+       style="@style/CompEditText"
+       app:layout_constraintTop_toTopOf="@id/support0_label_text_view"
+       app:layout_constraintLeft_toRightOf="@id/support0_label_text_view"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintBottom_toBottomOf="@id/support0_label_text_view"/>
+
+   <TextView
+       android:id="@+id/support1_label_text_view"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/s1_label"
+       style="@style/CompLabel"
+       app:layout_constraintTop_toBottomOf="@+id/support0_label_text_view"
+       app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+   <EditText
+       android:id="@+id/support1_edit_text"
+       android:layout_width="0dp"
+       android:layout_height="0dp"
+       android:hint="@string/s1_hint"
+       android:importantForAutofill="no"
+       android:inputType="text"
+       style="@style/CompEditText"
+       app:layout_constraintTop_toTopOf="@id/support1_label_text_view"
+       app:layout_constraintLeft_toRightOf="@id/support1_label_text_view"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintBottom_toBottomOf="@id/support1_label_text_view"/>
+
+
+
+
+   <com.google.android.material.floatingactionbutton.FloatingActionButton
+      android:id="@+id/save_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:onClick="saveButtonClick"
+      android:src="@drawable/check"
+      android:contentDescription="@string/save_composition"
+      android:layout_margin="10dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

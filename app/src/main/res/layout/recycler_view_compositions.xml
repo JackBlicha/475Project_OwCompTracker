@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview1"
+    android:orientation="vertical"
+    android:layout_marginBottom="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+   <TextView
+       android:id="@+id/composition_name_display"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       tools:text="@string/composition_name_hint"
+       android:textColor="@color/gray_200"
+       android:background="@color/blue_900"
+       app:layout_constraintTop_toTopOf="parent"
+       android:textSize="20sp" >
+   </TextView>
+
+   <TextView
+       android:id="@+id/victory_display"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       tools:text="@string/victory_hint"
+       android:textColor="@color/gray_200"
+       android:background="@color/blue_900"
+       app:layout_constraintTop_toBottomOf="@id/composition_name_display"
+       android:textSize="20sp" >
+   </TextView>
+
+   <TextView
+       android:id="@+id/rating_display"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       tools:text="@string/rating_hint"
+       android:textColor="@color/gray_200"
+       android:background="@color/blue_900"
+       app:layout_constraintTop_toBottomOf="@id/victory_display"
+       android:textSize="20sp" >
+   </TextView>
+
+   <ImageView
+       android:id="@+id/tank0_display"
+       android:layout_width="65dp"
+       android:layout_height="65dp"
+       android:layout_marginBottom="15dp"
+
+       style="@style/hero_item"
+
+
+       android:src="@drawable/error_tank"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/rating_display" />
+
+   <ImageView
+       android:id="@+id/tank1_display"
+       android:layout_width="65dp"
+       android:layout_height="65dp"
+
+       style="@style/hero_item"
+
+
+       android:src="@drawable/error_tank"
+       app:layout_constraintLeft_toRightOf="@id/tank0_display"
+       app:layout_constraintTop_toTopOf="@id/tank0_display" />
+
+   <ImageView
+       android:id="@+id/dps0_display"
+       android:layout_width="65dp"
+       android:layout_height="65dp"
+
+       style="@style/hero_item"
+
+
+       android:src="@drawable/error_dps"
+       app:layout_constraintLeft_toRightOf="@id/tank1_display"
+       app:layout_constraintTop_toTopOf="@id/tank1_display" />
+
+   <ImageView
+       android:id="@+id/dps1_display"
+       android:layout_width="65dp"
+       android:layout_height="65dp"
+
+       style="@style/hero_item"
+
+
+       android:src="@drawable/error_dps"
+       app:layout_constraintLeft_toRightOf="@id/dps0_display"
+       app:layout_constraintTop_toTopOf="@id/dps0_display" />
+
+   <ImageView
+       android:id="@+id/support0_display"
+       android:layout_width="65dp"
+       android:layout_height="65dp"
+
+       style="@style/hero_item"
+
+
+       android:src="@drawable/error_support"
+       app:layout_constraintLeft_toRightOf="@id/dps1_display"
+       app:layout_constraintTop_toTopOf="@id/dps1_display" />
+
+   <ImageView
+       android:id="@+id/support1_display"
+       android:layout_width="65dp"
+       android:layout_height="65dp"
+
+       style="@style/hero_item"
+
+
+       android:src="@drawable/error_support"
+       app:layout_constraintLeft_toRightOf="@id/support0_display"
+       app:layout_constraintTop_toTopOf="@id/support0_display" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+<!--<androidx.cardview.widget.CardView-->
+<!--   xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--   xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+<!--   android:id="@+id/cardview1"-->
+<!--   android:layout_width="match_parent"-->
+<!--   android:layout_height="75dp"-->
+<!--   card_view:cardCornerRadius="10dp"-->
+<!--   card_view:cardUseCompatPadding="true">-->
+
+
+
+<!--   <TextView-->
+<!--       android:id="@+id/composition_name_display"-->
+<!--       android:layout_width="match_parent"-->
+<!--       android:layout_height="match_parent"-->
+<!--       android:layout_gravity="center"-->
+<!--       android:gravity="center"-->
+<!-- />-->
+
+<!--</androidx.cardview.widget.CardView>-->

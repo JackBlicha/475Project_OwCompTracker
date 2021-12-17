@@ -1,0 +1,16 @@
+<PreferenceScreen
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <SwitchPreferenceCompat
+      app:key="dark_theme"
+      app:title="@string/pref_title_theme" />
+
+   <ListPreference
+      app:defaultValue="alphabetic"
+      app:entries="@array/pref_map_order"
+      app:entryValues="@array/pref_map_order_values"
+      app:key="map_order"
+      app:title="@string/pref_title_map_order"
+      app:useSimpleSummaryProvider="true" />
+
+</PreferenceScreen>

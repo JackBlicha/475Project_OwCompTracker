@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string name="app_name">OW Comp Tracker</string>
+
+   <string name="composition_name_label">N</string>
+   <string name="composition_name_hint">Composition Name</string>
+
+   <string name="win_label">W/L</string>
+   <string name="win_hint">Win/Loss</string>
+
+   <string name="victory_label">W/L</string>
+   <string name="victory_hint">Victory/Loss</string>
+
+   <string name="victory_rating_display">Win/Loss</string>
+   <string name="Victory">Victory</string>
+   <string name="Defeat">Defeat</string>
+   <string name="Draw">Draw</string>
+   <string name="Unknown">Unknown</string>
+
+   <string name="rating_label">R</string>
+   <string name="rating_hint">x/5 (rating)</string>
+
+
+   <string name="t0_label">T</string>
+   <string name="t0_hint">tank 0</string>
+   <string name="t1_label">T</string>
+   <string name="t1_hint">tank 1</string>
+   <string name="d0_label">D</string>
+   <string name="d0_hint">dps 0</string>
+   <string name="d1_label">D</string>
+   <string name="d1_hint">dps 1</string>
+   <string name="s0_label">S</string>
+   <string name="s0_hint">support 0</string>
+   <string name="s1_label">S</string>
+   <string name="s1_hint">support 1</string>
+
+
+   <string name="add">Add</string>
+   <string name="delete">Delete</string>
+   <string name="edit">Edit</string>
+   <string name="update">Update</string>
+   <string name="save_composition">Save Composition</string>
+   <string name="add_map">Add Map</string>
+   <string name="composition_deleted">Composition deleted.</string>
+   <string name="composition_added">Composition added.</string>
+   <string name="composition_updated">Composition updated.</string>
+
+   <string name="map">Maps</string>
+   <string name="new_map">New Map?</string>
+   <string name="create">Create</string>
+   <string name="cancel">Cancel</string>
+
+   <string name="update_composition">Update Composition</string>
+   <string name="add_composition">Add Composition</string>
+   <string name="no_compositions">No compositions exist for this map.</string>
+   <string name="match_number">%1$s (%2$d)</string>
+   <string name="undo">Undo</string>
+
+   <string name="title_activity_settings">SettingsActivity</string>
+   <string name="settings">Settings</string>
+   <string name="pref_title_theme">Dark theme</string>
+   <string name="pref_description_theme">Turn on dark theme</string>
+   <string name="pref_title_map_order">Map order</string>
+   <string name="pref_none">None</string>
+
+   <string-array name="pref_map_order">
+      <item>Alphabetic</item>
+      <item>Newest first</item>
+      <item>Oldest first</item>
+   </string-array>
+
+   <string-array name="pref_map_order_values">
+      <item>alpha</item>
+      <item>new_first</item>
+      <item>old_first</item>
+   </string-array>
+
+   <!-- Register/Login Activity  -->
+   <string name="register">register</string>
+   <string name="register_user">Register/Login</string>
+   <string name="register_uid_hint">id</string>
+   <string name="register_password_hint">pin</string>
+   <string name="register_username_hint">username</string>
+   <string name="register_button">Register</string>
+   <string name="login_button">Login</string>
+
+   <!-- Register/Login Activity  -->
+   <string name="sensor_data">sensor data</string>
+   <string name="twitter">Twitter</string>
+   <string name="twitter_title">Latest 2 tweets from @overwatchleague on Twitter:</string>
+   <string name="twitter_body_hint">body</string>
+   <string name="twitter_button">Refresh</string>
+   <string name="JSONException">Loading… \n try again if waiting longer than 6 seconds.</string>
+   <string name="twitter_body_default">(Tweets will display here)</string>
+   <string name="twitter_linebreak">- - - -</string>
+</resources>
